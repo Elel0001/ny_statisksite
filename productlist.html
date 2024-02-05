@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Productlist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/figur_forside.svg" alt="FashionRUs">
+            </a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="">Categories</a></li>
+                <li><a href="">Brands</a></li>
+                <li><a href="">Seasons</a></li>
+
+            </ul>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1 class="underoverskrift">Apparel</h1>
+            <div class="clothes_container"></div>
+        </section>
+        <!-- 
+        <article class="product_card">
+            <div class="clothes_image_container">
+                <img src="product_img.webp" alt="tights">
+            </div>
+            <h3 class="productdisplayname">Women Athletes Grey Track Pants</h3>
+            <p class="brandname">Bottomwear | Kalenji</p>
+            <p>DKK 495,-</p>
+        </article>
+
+        <article class="product_card_onSale">
+            <div class="clothes_image_container">
+                <img src="product_img.webp" alt="tights">
+            </div>
+            <h3 class="productdisplayname">Women Athletes Grey Track Pants</h3>
+            <p class="brandname">Bottomwear | Kalenji</p>
+            <p>Prev. DKK 495,-</p>
+            <p class="price">Now DKK 235,-</p>
+            <p class="discount">-65%</p>
+        </article>
+
+        <article class="product_card_souldOut">
+            <div class="clothes_image_container">
+                <img src="product_img.webp" alt="tights">
+            </div>
+            <h3 class="productdisplayname">Women Athletes Grey Track Pants</h3>
+            <p class="brandname">Bottomwear | Kalenji</p>
+            <p class="price">DKK 495,-</p>
+            <p class="soldout">Sold Out</p>
+        </article>
+
+        <article class="product_card_onSale_souldOut">
+            <div class="clothes_image_container">
+                <img src="product_img.webp" alt="tights">
+            </div>
+            <h3 class="productdisplayname">Women Athletes Grey Track Pants</h3>
+            <p class="brandname">Bottomwear | Kalenji</p>
+            <p>Prev. DKK 495,-</p>
+            <p class="price">Now DKK 235,-</p>
+            <p class="discount">-65%</p>
+            <p class="soldout">Sold Out</p>
+        </article> -->
+
+    </main>
+    <footer>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+<template class="clothes_template">
+    <article class="clothes_article">
+        <div class="clothes_image_container">
+            <img class="clothes_image" />
+        </div>
+        <h3 class="clothes_productdisplayname"></h3>
+        <p class="clothes_brandname"></p>
+        <p class="clothes_price"></p>
+        <p class="clothes_discount"></p>
+        <p class="clothes_soldout"></p>
+        <a href="product.html">Read more</a>
+    </article>
+</template>
