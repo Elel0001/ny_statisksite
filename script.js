@@ -57,6 +57,7 @@ function showClothes(clothesJSON) {
 
     clothesClone.querySelector(".clothes_discount").textContent = clothes.discount;
     // if (clothes.discount) {
+    //   clothesClone.querySelector(".clothes_discount").classList.add("clothes_discount_data");
     // }
 
     if (clothes.soldout) {
