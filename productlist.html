@@ -31,6 +31,13 @@
         </nav>
     </header>
     <main>
+        <nav class="breadcrumbs">
+            <ul>
+                <li> <a href="index.html">Home</a> </li>
+                <li> <a href="category.html">Categories</a></li>
+                <li> <a href="productlist.html">Apparel</a></li>
+            </ul>
+        </nav>
         <section>
             <h1 class="underoverskrift">Apparel</h1>
             <div class="clothes_container"></div>
@@ -89,13 +96,15 @@
 <template class="clothes_template">
     <article class="clothes_article">
         <div class="clothes_image_container">
-            <img class="clothes_image" />
+            <img class="clothes_image image_soldout" />
+            <p class="clothes_soldout"></p>
+
         </div>
         <h3 class="clothes_productdisplayname"></h3>
         <p class="clothes_brandname"></p>
+        <p class="clothes_old_price"></p>
         <p class="clothes_price"></p>
         <p class="clothes_discount"></p>
-        <p class="clothes_soldout"></p>
-        <a href="product.html">Read more</a>
+        <a class="read-more" href="product.html">Read more</a>
     </article>
 </template>

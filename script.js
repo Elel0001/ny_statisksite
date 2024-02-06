@@ -50,16 +50,15 @@ function showClothes(clothesJSON) {
     console.log("clothes", clothes);
     const clothesClone = clothesTemplate.cloneNode(true).content;
     clothesClone.querySelector(".clothes_image").src = `https://kea-alt-del.dk/t7/images/webp/640/${clothes.id}.webp`;
-    // clothesClone.querySelector(".clothes_image").alt = `Picture of ${clothes.productdisplayname} clothing`;
+    clothesClone.querySelector(".clothes_image").alt = `Picture of ${clothes.productdisplayname} item`;
     clothesClone.querySelector(".clothes_productdisplayname").textContent = clothes.productdisplayname;
     clothesClone.querySelector(".clothes_brandname").textContent = clothes.brandname;
     clothesClone.querySelector(".clothes_price").textContent = clothes.price;
-    // clothesClone.querySelector(".clothes_discount").textContent = clothes.discount;
-    // clothesClone.querySelector(".clothes_soldout").textContent = clothes.soldout;
+
+    clothesClone.querySelector(".clothes_discount").textContent = clothes.discount;
+    clothesClone.querySelector(".clothes_soldout").textContent = clothes.soldout;
+    clothesClone.querySelector(".read-more").setAttribute("href", `product.html?id=${clothes.id}`);
+
     clothesContainer.appendChild(clothesClone);
   });
 }
-
-// ************ SINGLE PODUCT SITE *******************
-const parametre = new URLSearchParams(window.location.search);
-const id = parametre.get("id");

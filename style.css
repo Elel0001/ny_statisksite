@@ -32,7 +32,6 @@ h4 {
 
 h5 {
   font-size: 1.2rem;
-  color: green;
   font-style: oblique;
 }
 
@@ -100,29 +99,80 @@ a {
 
 .clothes_image_container {
   max-width: 100%;
-  height: 350px;
+  /* height: 350px; */
   /* background-color: rgb(198, 208, 228); */
   /* margin: auto; */
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .clothes_image {
   max-width: 100%;
-  height: 350px;
+  /* height: 350px; */
+  position: relative;
+}
+
+.image_soldout {
+  opacity: 50%;
+}
+
+.clothes_discount {
+  background-color: red;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+.clothes_soldout {
+  background-color: white;
+  width: fit-content;
+  padding: 2rem;
+  position: absolute;
+  color: gray;
+  font-size: 1rem;
 }
 
 /* ************ SINGLE VIEW ************* */
 
-.product_display {
-  max-height: 550px;
+/* Brøkrummesti */
+.breadcrumbs {
+  padding: 10px;
+}
+
+.breadcrumbs ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.breadcrumbs a {
+  /* text-decoration: none; */
+  /* border-bottom: 1px solid black; */
+  color: black;
+}
+
+.breadcrumbs li:last-child {
+  pointer-events: none; /* Gør det sidste element ikke-klikbart */
+}
+
+.breadcrumbs li:not(:last-child)::after {
+  content: "›"; /* Pilemellemrum */
+  margin-left: 5px;
+  color: black;
+  font-size: 1.2rem;
+}
+
+.images_singleview {
+  max-height: 600px;
   width: auto;
 }
 
-/* *********************************** */
-
-/* BURGERMENU */
+/* *************** BURGERMENU ******************** */
 header {
   display: flex;
   justify-content: space-between;
