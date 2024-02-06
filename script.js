@@ -54,9 +54,14 @@ function showClothes(clothesJSON) {
     clothesClone.querySelector(".clothes_productdisplayname").textContent = clothes.productdisplayname;
     clothesClone.querySelector(".clothes_brandname").textContent = clothes.brandname;
     clothesClone.querySelector(".clothes_price").textContent = clothes.price;
-
     clothesClone.querySelector(".clothes_discount").textContent = clothes.discount;
-    clothesClone.querySelector(".clothes_soldout").textContent = clothes.soldout;
+
+    if (clothes.soldout) {
+      clothesClone.querySelector(".clothes_image").classList.add("image_soldout");
+      clothesClone.querySelector(".clothes_box").classList.add("clothes_soldout");
+      clothesClone.querySelector(".clothes_box").textContent = "Sold Out";
+    }
+
     clothesClone.querySelector(".read-more").setAttribute("href", `product.html?id=${clothes.id}`);
 
     clothesContainer.appendChild(clothesClone);
