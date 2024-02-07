@@ -135,6 +135,14 @@ a {
   color: gray;
   font-size: 1rem;
 }
+.clothes_soldout_single {
+  background-color: white;
+  width: fit-content;
+  padding: 2rem;
+  position: absolute;
+  color: gray;
+  font-size: 1rem;
+}
 
 /* ************ SINGLE VIEW ************* */
 
