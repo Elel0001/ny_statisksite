@@ -2,6 +2,7 @@
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
 const url = "https://kea-alt-del.dk/t7/api/products/" + id;
+const breadcrumbsLast = document.querySelector(".breadcrumbs_last");
 const breadcrumbsProduct = document.querySelector(".breadcrumbs_product");
 
 fetch(url)
@@ -14,6 +15,7 @@ function showClothes(product) {
   document.querySelector(".purchaseBox h1").innerHTML = product.productdisplayname;
   document.querySelector(".purchaseBox .brand").innerHTML = product.brandname;
   document.querySelector(".images_singleview").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
+  breadcrumbsLast.textContent = clothes.category;
   breadcrumbsProduct.textContent = product.productdisplayname;
 
   if (product.soldout) {
