@@ -12,27 +12,22 @@ body {
 
 h1 {
   font-size: 3rem;
+  font-family: "Raleway", sans-serif;
 }
 
 h2 {
   font-size: 2rem;
+  font-family: "Raleway", sans-serif;
 }
 
 h3 {
   font-size: 1.5rem;
-}
-
-h4 {
-  font-size: 1.2rem;
-}
-
-h5 {
-  font-size: 1.2rem;
-  font-style: oblique;
+  font-family: "Raleway", sans-serif;
 }
 
 a {
   font-size: 1.1rem;
+  font-family: "Raleway", sans-serif;
 }
 
 /************************** index ***********************/
@@ -47,7 +42,6 @@ a {
 
 .forside_boks {
   background-color: #c48618;
-
   margin-bottom: 1rem;
   padding: 1rem 0;
   text-align: center;
@@ -55,11 +49,14 @@ a {
   width: 410px;
 }
 
+.forside_boks:hover {
+  scale: 1.04;
+}
+
 .forside_boks a {
   text-decoration: none;
-  /* color: #490d0d; */
   color: black;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 #forside_billede {
@@ -94,17 +91,22 @@ a {
 .grid_3-3 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin: 0% 4%;
+  margin: 0 4rem;
 }
 
 .kategori_boks {
-  background-color: orange;
+  background-color: #eba120;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   padding: 8%;
   margin: 2% 2%;
-  border-radius: 7px;
+  /* border-radius: 7px; */
   text-decoration: none;
   color: black;
   text-align: center;
+}
+
+.kategori_boks:hover {
+  scale: 1.02;
 }
 
 /********************* PRODUCTLIST ***********************/
