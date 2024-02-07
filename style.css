@@ -152,7 +152,7 @@ a {
 }
 
 .clothes_article {
-  background-color: #f4c778;
+  background-color: #efac38;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   padding: 1rem;
   display: flex;
@@ -177,7 +177,8 @@ a {
 }
 
 .image_soldout {
-  opacity: 50%;
+  /* opacity: 70%; */
+  filter: brightness(50%);
 }
 
 .hidden {
@@ -285,12 +286,6 @@ dl {
 label p {
   padding-bottom: 0.5rem;
 }
-
-/* select {
-  background-color: rgb(189, 165, 45);
-  padding: 1rem;
-  border-bottom: ;
-} */
 
 .styling_sizeBox {
   padding: 0.5rem;
