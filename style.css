@@ -5,13 +5,9 @@
 }
 
 body {
-  background-color: rgb(241, 222, 193);
+  background-color: rgb(220, 215, 208);
   margin: 2rem;
   font-family: sans-serif;
-}
-
-header {
-  margin-bottom: 2rem;
 }
 
 h1 {
@@ -45,18 +41,47 @@ a {
   padding: 3% 5%;
 }
 
+.body_forside {
+  margin: 0;
+}
+
 .forside_boks {
-  background-color: orange;
-  margin: 0% 25%;
-  margin-bottom: 2%;
-  padding: 3% 0;
+  background-color: #c48618;
+
+  margin-bottom: 1rem;
+  padding: 1rem 0;
   text-align: center;
-  border-radius: 7px;
+  /* border-radius: 7px; */
+  width: 410px;
 }
 
 .forside_boks a {
   text-decoration: none;
+  /* color: #490d0d; */
   color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#forside_billede {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  opacity: 85%;
+  filter: grayscale(20%);
+  position: absolute;
+  z-index: -1;
+}
+
+.logo_forside {
+  width: 10%;
+  height: 10%;
+  margin: 3rem;
+}
+
+.frontpage_categories {
+  display: grid;
+  justify-content: end;
+  padding-top: 12rem;
 }
 
 /************************** Category page ***********************/
@@ -230,8 +255,8 @@ header {
 }
 
 .logo img {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
 }
 
 nav {
