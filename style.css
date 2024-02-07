@@ -180,28 +180,43 @@ a {
 }
 
 .images_singleview {
-  max-height: 600px;
+  max-height: 500px;
   width: auto;
 }
 
 .purchaseBox {
   padding-top: 2rem;
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-  justify-content: center;
 }
 
 .styling_purchaceText {
-  padding-top: 6rem;
+  padding-top: 1.5rem;
 }
 
 .choose_size_box {
   color: orange;
 }
 
-form {
-  padding-top: 8rem;
+@media screen and (min-width: 600px) {
+  .images_singleview {
+    max-height: 600px;
+    width: auto;
+  }
+
+  .purchaseBox {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .styling_purchaceText {
+    padding-top: 6rem;
+  }
+
+  form {
+    padding-top: 8rem;
+  }
 }
 
 /* *************** BURGERMENU ******************** */
