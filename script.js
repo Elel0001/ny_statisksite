@@ -3,6 +3,7 @@ const burger = document.querySelector(".burger");
 const nav = document.querySelector("nav");
 const menu = document.querySelector(".menu");
 const links = document.querySelectorAll(".menu li a");
+const headline = document.querySelector("h1.underoverskrift");
 
 burger.addEventListener("click", () => {
   burger.classList.toggle("active");
@@ -59,6 +60,7 @@ function showClothes(clothesJSON) {
     clothesClone.querySelector(".clothes_brandname").textContent = clothes.brandname;
     clothesClone.querySelector(".clothes_price").textContent = clothes.price;
     clothesClone.querySelector(".clothes_discount_data").textContent = clothes.discount;
+    headline.textContent = clothes.category;
 
     if (clothes.discount !== null) {
       clothesClone.querySelector(".clothes_discount").classList.remove("hidden");
