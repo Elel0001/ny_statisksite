@@ -10,8 +10,8 @@ fetch(url)
 function showClothes(product) {
   console.log(product);
 
-  document.querySelector(".purchaseBox h3").textcontent = product.productdisplayname;
-  document.querySelector(".purchaseBox .brand").textcontent = product.brandname;
+  document.querySelector(".purchaseBox h1").innerHTML = product.productdisplayname;
+  document.querySelector(".purchaseBox .brand").innerHTML = product.brandname;
   document.querySelector(".images_singleview").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
 
   if (product.soldout) {
