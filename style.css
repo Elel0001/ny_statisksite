@@ -184,6 +184,26 @@ a {
   width: auto;
 }
 
+.purchaseBox {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.styling_purchaceText {
+  padding-top: 6rem;
+}
+
+.choose_size_box {
+  color: orange;
+}
+
+form {
+  padding-top: 8rem;
+}
+
 /* *************** BURGERMENU ******************** */
 header {
   display: flex;
