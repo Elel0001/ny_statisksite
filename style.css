@@ -261,7 +261,7 @@ a {
 }
 
 .purchaseBox {
-  padding-top: rem;
+  padding-top: 1rem;
 }
 
 .styling_purchaceText {
@@ -269,7 +269,7 @@ a {
 }
 
 .choose_size_box {
-  color: orange;
+  color: rgb(225, 139, 0);
 }
 
 dl {
@@ -280,6 +280,24 @@ dl {
   padding-top: 2rem;
   font-family: "Raleway", sans-serif;
   font-style: italic;
+}
+
+label p {
+  padding-bottom: 0.5rem;
+}
+
+/* select {
+  background-color: rgb(189, 165, 45);
+  padding: 1rem;
+  border-bottom: ;
+} */
+
+.styling_sizeBox {
+  padding: 0.5rem;
+}
+
+button {
+  padding: 0.5rem;
 }
 
 @media screen and (min-width: 600px) {
