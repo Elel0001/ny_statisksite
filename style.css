@@ -37,6 +37,20 @@ p {
   font-family: "Raleway", sans-serif;
 }
 
+dd {
+  font-family: "Raleway", sans-serif;
+  padding-bottom: 1rem;
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+dt {
+  font-family: "Raleway", sans-serif;
+  padding-bottom: 0.25rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
 p.clothes_brandname {
   font-size: 1.2rem;
   font-family: "Raleway", sans-serif;
@@ -247,7 +261,7 @@ a {
 }
 
 .purchaseBox {
-  padding-top: 2rem;
+  padding-top: rem;
 }
 
 .styling_purchaceText {
@@ -260,6 +274,12 @@ a {
 
 dl {
   padding-top: 2rem;
+}
+
+.single_headline {
+  padding-top: 2rem;
+  font-family: "Raleway", sans-serif;
+  font-style: italic;
 }
 
 @media screen and (min-width: 600px) {
@@ -277,11 +297,11 @@ dl {
   }
 
   .styling_purchaceText {
-    padding-top: 6rem;
+    padding-top: 5rem;
   }
 
   form {
-    padding-top: 8rem;
+    padding-top: 2rem;
   }
 }
 

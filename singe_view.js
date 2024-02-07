@@ -16,7 +16,7 @@ function showClothes(product) {
   document.querySelector(".styling_purchaceText .relid-number").innerHTML = product.relid;
   document.querySelector(".styling_purchaceText .color-item").innerHTML = product.basecolour;
   document.querySelector(".styling_purchaceText .article_type").innerHTML = product.articletype;
-  document.querySelector(".clothes_price").innerHTML = product.price;
+  document.querySelector(".clothes_price_single").innerHTML = product.price;
   document.querySelector(".purchaseBox .brand").innerHTML = product.brandname;
   document.querySelector(".images_singleview").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
   breadcrumbsLast.textContent = product.category;
