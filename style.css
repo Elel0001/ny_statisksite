@@ -126,6 +126,7 @@ a {
   background-color: red;
   padding: 0.5rem;
   border-radius: 8px;
+  width: fit-content;
 }
 
 .clothes_soldout {
