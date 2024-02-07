@@ -20,7 +20,11 @@ links.forEach((link) => {
 // ************ PRODUCTLIST SITE ***********
 window.addEventListener("DOMContentLoaded", init);
 
-const clothesURL = "https://kea-alt-del.dk/t7/api/products";
+const params = new URLSearchParams(window.location.search);
+const category = params.get("category");
+console.log("du valgte", category);
+
+const clothesURL = "https://kea-alt-del.dk/t7/api/products?category=" + category;
 
 let clothesTemplate;
 let clothesContainer;
