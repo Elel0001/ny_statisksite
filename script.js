@@ -55,6 +55,7 @@ function showClothes(clothesJSON) {
     clothesClone.querySelector(".clothes_brandname").textContent = clothes.brandname;
     clothesClone.querySelector(".clothes_price").textContent = clothes.price;
     clothesClone.querySelector(".clothes_discount_data").textContent = clothes.discount;
+
     if (clothes.discount !== null) {
       clothesClone.querySelector(".clothes_discount").classList.remove("hidden");
     }
