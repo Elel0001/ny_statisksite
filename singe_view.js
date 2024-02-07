@@ -15,7 +15,7 @@ function showClothes(product) {
   document.querySelector(".purchaseBox h1").innerHTML = product.productdisplayname;
   document.querySelector(".purchaseBox .brand").innerHTML = product.brandname;
   document.querySelector(".images_singleview").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
-  breadcrumbsLast.textContent = clothes.category;
+  breadcrumbsLast.textContent = product.category;
   breadcrumbsProduct.textContent = product.productdisplayname;
 
   if (product.soldout) {
